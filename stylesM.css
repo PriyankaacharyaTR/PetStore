@@ -1,0 +1,233 @@
+/* Basic styling for the page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+ 
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Banner section with pet images */
+/* Styling for the banner */
+/* Styling for the banner */
+#banner {
+    height: 100vh;
+    position: relative;
+    background-color: #ff6bb3;
+}
+
+/* Styling for the button inside the banner */
+/* Login Button */
+.login-button {
+    position: absolute;
+    top: 20px;  /* Adjust as needed */
+    right: 20px;
+    background-color: white;
+    color: #ff6bb3;
+    border: 2px solid #ff6bb3;
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Hover Effect */
+/* .login-button:hover {
+    background-color: #fa92c4;
+    color: white;
+    border: 2px solid white;
+} */
+
+
+#banner .navbar .logo {
+    color: #c723a1;
+}
+
+
+
+#banner .contact-button {
+    position: absolute; /* Positioning the button absolutely */
+    top: 20px; /* Distance from the top */
+    right: 100px; /* Distance from the right */
+    background-color: white;
+    color:#ff6bb3;
+    border: 2px solid #ff6bb3;
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+
+    /* border: round;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s ease; Smooth transition for hover effect */
+}
+.explore-button {
+    position: absolute; /* Positioning the button absolutely */
+    top: 450px; /* Distance from the top */
+     /* Distance from the right */
+    left:700px;
+    background-color: white;
+    color:#c723a1;
+    border: 2px solid #ff6bb3;
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.explore-button:hover {
+    background-color: pink;
+    color: rgb(34, 33, 33);
+}
+
+#banner h1{
+    position: relative; /* Positioning the button absolutely */
+    top: 30%; 
+    left: 25%;
+    font-size: 5rem;
+    color: #ffffff;
+}
+/* Hover effect */
+#banner .login-button:hover {
+    text-decoration: underline; /* Underline when hovered */
+}
+
+#banner .contact-button:hover {
+    text-decoration: underline; /* Underline when hovered */
+}
+
+
+
+#animated-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+
+/* Description Section
+#description {
+    padding: 100px;
+    text-align: center;
+    background-color: #ff9ed2;
+} */
+
+.content-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    scroll-snap-align: start;
+}
+
+.content-section img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.content-section .description {
+    width: 50%;
+}
+
+#page1 { background-color: #ff9ed2; }
+#page2 { background-color: #ff6bb3; }
+#page3 { background-color: #ff9ed2; }
+#page4 { background-color: #ff6bb3; }
+
+footer {
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Animation for falling text */
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fall 0.4s ease forwards;
+    color: white;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.letter:nth-child(1) { animation-delay: 0.1s; }
+.letter:nth-child(2) { animation-delay: 0.2s; }
+.letter:nth-child(3) { animation-delay: 0.3s; }
+/* Add delays for all other letters similarly */
+
+.navbar {
+    background: #f9f7f8; /* Light baby pink */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links a {
+    color: #c723a1;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
